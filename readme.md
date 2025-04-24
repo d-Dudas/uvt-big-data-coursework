@@ -1,5 +1,14 @@
 # Big Data Coursework
 
+## Dependencies
+
+- python 3.8 or higher
+- pipenv
+
+## Dataset
+
+[BETH dataset](https://www.kaggle.com/datasets/katehighnam/beth-dataset)
+
 ## Requierements
 
 ### Main goal
