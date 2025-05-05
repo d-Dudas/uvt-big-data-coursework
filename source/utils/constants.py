@@ -1,6 +1,11 @@
+import os
 import pandas as pd
 
-# Example input sample
+DATASET_NAME = "katehighnam/beth-dataset"
+DATASET_DIR = "dataset"
+CURRENT_DIR = os.getcwd()
+DATASET_PATH = os.path.join(CURRENT_DIR, DATASET_DIR)
+
 evil_input_raw = {
     'userId': [1001],
     'processName': ['(sd-pam)'],
@@ -29,6 +34,6 @@ benign_input_raw = {
 }
 
 
-evil_input = pd.DataFrame(evil_input_raw)
-suspicious_input = pd.DataFrame(suspicious_input_raw)
-benign_input = pd.DataFrame(benign_input_raw)
+EVIL_INPUT = pd.DataFrame(evil_input_raw)
+SUSPICIOUS_INPUT = pd.DataFrame(suspicious_input_raw)
+BENIGN_INPUT = pd.DataFrame(benign_input_raw)

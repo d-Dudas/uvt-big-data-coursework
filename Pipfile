@@ -9,6 +9,8 @@ numpy = "*"
 matplotlib = "*"
 scikit-learn = "*"
 lightgbm = "*"
+kagglehub = "*"
+ipywidgets = "*"
 
 [dev-packages]
 ipykernel = "*"
