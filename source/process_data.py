@@ -11,23 +11,6 @@ def assign_label(row):
     else:
         return 'benign'
     
-'''
-### **The dataset have the following features:**  
-
-- timestamp - not really useful for our ML model, since the timestamp is not relevant in the context of evilness of a call
-- processId - not useful, since an evil process can have any ID
-- parentProcessId - not useful, since an evil process' parent can have any ID
-- **userId**
-- **processName**
-- hostName - not useful, since an attack can happen to any host
-- eventId - not useful, since an evil event can have any ID
-- **eventName**
-- **argsNum**
-- **returnValue**
-- **args**
-- **sus**
-- **evil**
-'''
 COLUMNS_TO_KEEP = [
     'userId',
     'processName',

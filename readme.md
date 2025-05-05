@@ -5,6 +5,50 @@
 - python 3.8 or higher
 - pipenv
 
+## Setup
+
+### 1. Install pip packages
+
+```
+pipenv install
+```
+
+### 2. Bootstrap
+
+The bootstrap.py script will automatically download the data and remove  
+unnecessary files.
+
+```
+cd source
+./bootstrap.py
+```
+
+### 3. Process data
+
+The process_data.py script will create some cleaned datafiles.
+
+**We will only keep the bolded features:**  
+
+- timestamp - not really useful for our ML model, since the timestamp is not relevant in the context of evilness of a call
+- processId - not useful, since an evil process can have any ID
+- parentProcessId - not useful, since an evil process' parent can have any ID
+- **userId**
+- **processName**
+- hostName - not useful, since an attack can happen to any host
+- eventId - not useful, since an evil event can have any ID
+- **eventName**
+- **argsNum**
+- **returnValue**
+- **args**
+- **sus**
+- **evil**
+
+```
+./process_data.py
+```
+
+### 4. Setup ready for Jupyter Notebook Files.
+
 ## Dataset
 
 [BETH dataset](https://www.kaggle.com/datasets/katehighnam/beth-dataset)
