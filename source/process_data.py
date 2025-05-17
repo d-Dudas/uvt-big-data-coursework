@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import pandas as pd
-import source.utils.utils as utils
+import utils.utils as utils
 
 def assign_label(row):
     if row['evil'] == 1:

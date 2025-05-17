@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import kagglehub
-import source.utils.constants as constants
+import utils.constants as constants
 import os
 import shutil
 

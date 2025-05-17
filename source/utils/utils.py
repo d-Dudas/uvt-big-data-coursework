@@ -1,6 +1,6 @@
 import os
 import sys
-import source.utils.constants as constants
+import utils.constants as constants
 
 def check_path(path: str):
     if not os.path.exists(path):
